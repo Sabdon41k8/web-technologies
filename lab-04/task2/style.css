@@ -6,7 +6,7 @@ body {
     background-color: white;
 }
 
-.container {
+.recipe {
     border: 1px solid #8888cc;
     outline: 1px solid #ccccff;
     outline-offset: -5px;
@@ -15,12 +15,12 @@ body {
     text-align: center;
 }
 
-#main-title {
+#recipe-title {
     color: red;
     font-size: 36px;
 }
 
-h2 {
+.recipe-subtitle {
     font-size: 26px;
 }
 
@@ -53,7 +53,7 @@ hr {
     margin: 20px auto;
 }
 
-#description {
+#recipe-footer {
     font-style: italic;
     font-size: 18px;
     letter-spacing: 1px;

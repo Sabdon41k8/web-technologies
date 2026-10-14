@@ -6,11 +6,11 @@ a {
     color: green;
 }
 
-.berries li {
+.list-dots li {
     list-style-type: square;
 }
 
-.vegetables li {
+.list-check li {
     list-style-type: "✓ ";
 }
 
@@ -18,10 +18,10 @@ a {
     list-style-type: none;
 }
 
-.berries a {
+.list-dots a {
     text-decoration: none;
 }
 
-.different ol {
+.mark-inside ol {
     list-style-position: inside;
 }
