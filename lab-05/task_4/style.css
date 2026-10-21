@@ -1,0 +1,60 @@
+main {
+    gap: 20px;
+}
+
+div {
+    width: 300px;
+    height: 200px;
+    padding: 15px;
+    display: inline-block;
+}
+
+.first {
+    background-color: #f5b4e2;
+    background: linear-gradient(
+        45deg,
+        #ff99cc 0%,
+        #ff99cc 50%,
+        #cc6699 50%,
+        #cc6699 100%
+    );
+    background-size: 40px 40px;
+}
+
+.second {
+    background-color: #c87cb3;
+    background:
+        linear-gradient(90deg,
+            rgba(0,0,0,.2) 50%,
+            transparent 50%),
+        linear-gradient(
+            rgba(0,0,0,.2) 50%,
+            transparent 50%);
+
+    background-size: 40px 40px;
+}
+
+.third {
+    background-color: #934b81;
+    background: radial-gradient(
+        circle farthest-corner at 30px 20px,
+        yellow 0%,
+        orange 40%,
+        red 70%,
+        purple 100%
+    );
+}
+
+.fourth {
+    background-color: #773867;
+    background:
+        linear-gradient(
+            rgba(255,255,255,0.6),
+            rgba(255,255,255,0)
+        ),
+        #8a2be2;
+
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    background-position: bottom;
+}

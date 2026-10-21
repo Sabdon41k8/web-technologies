@@ -1,0 +1,43 @@
+
+table {
+    border: 2px solid white;
+    text-align: center;
+}
+
+th {
+    background-color: blueviolet;
+    height: 50px;
+    width: 200px;
+}
+
+td {
+    background-color: blueviolet;
+    height: 50px;
+
+}
+
+.color-300 {
+    background-color: #f5b4e2;
+}
+
+.color-500 {
+    background-color: #c87cb3;
+}
+
+.color-700 {
+    background-color: #934b81;
+}
+
+.color-800 {
+    background-color: #773867;
+}
+
+.color-900 {
+    background-color: #5e2750;
+    color: white;
+}
+
+.color-950 {
+    background-color: #47003a;
+    color: white;
+}

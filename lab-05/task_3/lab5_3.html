@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-background">
+    <header class="page-header">
+        <a class="back-link" href="../index.html">Повернутися до головної сторінки</a>
+    </header>
+
+  <main class="page-layout">
+  <h1 class="form-title">Форма збору інформації</h1>
+
+  <form class="form-card questionnaire-form" action="#" method="get" tabindex="-1">
+
+    <fieldset class="form-section">
+      <legend class="section-title">Особисті та контактні дані</legend>
+
+      <p class="form-field">
+        <label class="field-label" for="username">Текстове поле (ПІБ):</label>
+        <input class="text-input" type="text" id="username" name="username" placeholder="Іванов Іван Іванович" required>
+      </p>
+
+      <p class="form-field">
+        <label class="field-label" for="user_pass">Пароль (6 символів: min 1 мала, 1 велика, 1 цифра):</label>
+        <input class="text-input" type="password" id="user_pass" name="user_pass" placeholder="Abc123" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6}" title="Пароль повинен містити рівно 6 символів, щонайменше одну велику літеру, одну малу літеру та одну цифру" required>
+      </p>
+
+      <p class="form-field">
+        <label class="field-label" for="user_email">Email (без автозаповнення):</label>
+        <input class="text-input" type="email" id="user_email" name="user_email" placeholder="example@domain.com" autocomplete="off" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+      </p>
+
+      <p class="form-field">
+        <label class="field-label" for="user_tel">Мобільний номер (формат +380XXXXXXXXX):</label>
+        <input class="text-input" type="tel" id="user_tel" name="user_tel" placeholder="+380991234567" pattern="\+380\d{9}" required>
+      </p>
+
+      <p class="form-field">
+        <label class="field-label" for="birth_date">Дата народження:</label>
+        <input class="text-input" type="date" id="birth_date" name="birth_date" value="2000-01-01">
+      </p>
+
+      <p class="form-field">
+        <label class="field-label" for="city_choice">Місто (з підказками datalist):</label>
+        <input class="text-input" type="text" id="city_choice" name="city_choice" list="cities_list" placeholder="Оберіть або введіть місто">
+        <datalist id="cities_list">
+          <option value="Київ"></option>
+          <option value="Харків"></option>
+          <option value="Одеса"></option>
+          <option value="Дніпро"></option>
+          <option value="Львів"></option>
+        </datalist>
+      </p>
+    </fieldset>
+
+    <br>
+
+    <fieldset class="form-section">
+      <legend class="section-title">Опитування та уподобання</legend>
+
+      <p class="form-field"><strong class="field-label">Радіо-блок 1 (Рівень освіти):</strong>
+        <label class="choice-label"><input class="choice-input" type="radio" name="education" value="basic"> Середня</label>
+        <label class="choice-label"><input class="choice-input" type="radio" name="education" value="bachelor"> Бакалавр</label>
+        <label class="choice-label"><input class="choice-input" type="radio" name="education" value="master"> Магістр</label>
+      </p>
+
+      <p class="form-field"><strong class="field-label">Радіо-блок 2 (Формат навчання — 2-ге значення за замовчуванням):</strong>
+        <label class="choice-label"><input class="choice-input" type="radio" name="format" value="offline"> Офлайн</label>
+        <label class="choice-label"><input class="choice-input" type="radio" name="format" value="online" checked> Онлайн (за замовчуванням)</label>
+        <label class="choice-label"><input class="choice-input" type="radio" name="format" value="mixed"> Змішаний</label>
+      </p>
+
+      <p class="form-field"><strong class="field-label">Чекбокси (Інтереси — 4 значення):</strong>
+        <label class="choice-label"><input class="choice-input" type="checkbox" name="interests" value="web"> Web-розробка</label>
+        <label class="choice-label"><input class="choice-input" type="checkbox" name="interests" value="design"> Дизайн</label>
+        <label class="choice-label"><input class="choice-input" type="checkbox" name="interests" value="qa"> Тестування (QA)</label>
+        <label class="choice-label"><input class="choice-input" type="checkbox" name="interests" value="devops"> DevOps</label>
+      </p>
+
+      <p class="form-field">
+        <label class="field-label" for="experience">Досвід у сфері (3-тє значення за замовчуванням):</label>
+        <select class="select-input" id="experience" name="experience">
+          <option value="none">Без досвіду</option>
+          <option value="less_1">Менше 1 року</option>
+          <option value="1_to_3" selected>Від 1 до 3 років (за замовчуванням)</option>
+          <option value="3_to_5">Від 3 до 5 років</option>
+          <option value="more_5">Понад 5 років</option>
+        </select>
+      </p>
+
+      <p class="form-field">
+        <label class="field-label" for="languages">Мови програмування (множинний вибір - затисніть Ctrl/Cmd):</label>
+        <select class="select-input" id="languages" name="languages" multiple size="4">
+          <option value="js">JavaScript</option>
+          <option value="html_css">HTML/CSS</option>
+          <option value="python">Python</option>
+          <option value="php">PHP</option>
+          <option value="java">Java</option>
+          <option value="cpp">C++</option>
+        </select>
+      </p>
+
+      <p class="form-field">
+        <label class="field-label" for="specialization">Спеціалізація (з групуванням optgroup):</label>
+        <select class="select-input" id="specialization" name="specialization">
+          <optgroup label="Frontend">
+            <option value="react">React</option>
+            <option value="vue">Vue.js</option>
+            <option value="angular">Angular</option>
+          </optgroup>
+          <optgroup label="Backend">
+            <option value="node">Node.js</option>
+            <option value="laravel">Laravel</option>
+            <option value="django">Django</option>
+          </optgroup>
+          <optgroup label="Mobile">
+            <option value="flutter">Flutter</option>
+            <option value="react_native">React Native</option>
+            <option value="swift">Swift</option>
+          </optgroup>
+          <optgroup label="Data Science">
+            <option value="pandas">Pandas/NumPy</option>
+            <option value="ml">Machine Learning</option>
+            <option value="bi">Power BI</option>
+          </optgroup>
+        </select>
+      </p>
+    </fieldset>
+
+    <br>
+
+    <fieldset class="form-section">
+      <legend class="section-title">Файли та додаткова інформація</legend>
+
+      <p class="form-field">
+        <label class="field-label" for="audio_files">Завантаження аудіофайлів (декілька файлів, тільки аудіо):</label>
+        <input class="file-input" type="file" id="audio_files" name="audio_files" accept="audio/*" multiple>
+      </p>
+
+      <p class="form-field">
+        <label class="field-label" for="bio">Додаткова інформація про себе (textarea):</label>
+        <textarea class="text-input text-area" id="bio" name="bio" rows="4" cols="50" placeholder="Розкажіть дещо про свій досвід..."></textarea>
+      </p>
+    </fieldset>
+
+    <br>
+
+    <p class="button-row">
+      <button class="submit-button" type="submit">Надіслати форму</button>
+      <button class="reset-button" type="reset">Очистити форму</button>
+    </p>
+
+  </form>
+  </main>
+
+</body>
+</html>

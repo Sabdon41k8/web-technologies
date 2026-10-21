@@ -1,0 +1,100 @@
+div {
+    background-color: rgb(255, 165, 0);
+    width: 500px;
+    padding: 20px;
+    color: white;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+ul.list-first-level {
+    padding: 0px 20px;
+    list-style: none;
+}
+
+li.list-element-first-level {
+    background-color: rgb(103, 155, 128);
+    margin-bottom: 10px;
+    margin-right: 20px;
+    padding-left: 40px;
+    background-position: 8px 24px;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+}
+
+ul.list-first-level span {
+    font-size: 20px;
+    font-weight: 700;
+    background-color: rgb(199, 124, 106);
+}
+
+ul.list-second-level {
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 12px;
+    padding-left: 40px;
+    list-style: none;
+}
+
+li.list-element-second-level {
+    background-color: rgb(153, 180, 102);
+    margin-bottom: 10px;
+    margin-right: 20px;
+    padding-left: 40px;
+    background-position: 8px center;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+}
+
+ul.list-first-level .icon-route {
+    background-image: url("../icons/rule.png");
+}
+
+ul.list-second-level .icon-ad-units {
+    background-image: url("../icons/ad_units.png");
+}
+
+ul.list-second-level .icon-airplane {
+    background-image: url("../icons/airplane_ticket.png");
+}
+
+ul.list-second-level .icon-hotel {
+    background-image: url("../icons/hotel.png");
+}
+
+ul.list-second-level .icon-car {
+    background-image: url("../icons/car_rental.png");
+}
+
+ul.list-second-level .icon-bar {
+    background-image: url("../icons/local_bar.png");
+}
+
+ul.list-second-level .icon-casino {
+    background-image: url("../icons/casino.png");
+}
+
+ul.list-second-level .icon-museum {
+    background-image: url("../icons/museum.png");
+}
+
+ul.list-second-level .icon-festival {
+    background-image: url("../icons/festival.png");
+}
+
+ul.list-second-level span {
+    background-color: rgb(218, 106, 32);
+}
+
+span {
+    padding: 10px;
+    display: inline-block;
+}
