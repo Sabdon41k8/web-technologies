@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Поточна погода та прогноз на тиждень у Києві">
+    <title>Task 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page">
+        <header class="page-header">
+            <p class="eyebrow">Погода сьогодні</p>
+            <h1>Київ, Україна</h1>
+            <p class="date">Понеділок, 17 червня</p>
+        </header>
+
+        <section class="weather-scene" aria-label="Прогноз погоди в Києві">
+            <article class="current-weather">
+                <p class="current-weather__label">Зараз</p>
+                <p class="current-weather__temperature">17<span>°</span></p>
+                <p class="current-weather__description">Хмарно з проясненнями</p>
+                <p class="current-weather__details">Відчувається як 15° <span aria-hidden="true">·</span> Вітер 8 км/год</p>
+            </article>
+
+            <svg class="cloud" role="img" aria-label="Велика біла хмара" viewBox="0 0 100 60" xmlns="http://www.w3.org/2000/svg">
+                <title>Велика біла хмара</title>
+                <defs>
+                    <linearGradient id="cloud-gradient" x1="0" x2="0" y1="0" y2="1">
+                        <stop offset="0%" stop-color="#fff"/>
+                        <stop offset="72%" stop-color="#edf0f2"/>
+                        <stop offset="100%" stop-color="#c2c9ce"/>
+                    </linearGradient>
+                </defs>
+                <path d="M25 51a17 17 0 0 1-2-34 25 25 0 0 1 48-5 20 20 0 0 1 6 39H25Z" fill="url(#cloud-gradient)"/>
+            </svg>
+
+            <div class="scene-controls" aria-hidden="true">
+                <span class="scene-controls__arrow scene-controls__arrow--left"></span>
+                <span class="scene-controls__arrow scene-controls__arrow--right"></span>
+            </div>
+
+            <section class="forecast" aria-label="Прогноз на наступні дні">
+                <h2 class="forecast__title">На цьому тижні</h2>
+                <ul class="forecast__days">
+                    <li class="forecast__day">
+                        <span class="forecast__name">Вт</span>
+                        <span class="forecast__icon" aria-hidden="true">☀</span>
+                        <span class="forecast__temperature">19°</span>
+                    </li>
+                    <li class="forecast__day">
+                        <span class="forecast__name">Ср</span>
+                        <span class="forecast__icon" aria-hidden="true">☁</span>
+                        <span class="forecast__temperature">16°</span>
+                    </li>
+                    <li class="forecast__day">
+                        <span class="forecast__name">Чт</span>
+                        <span class="forecast__icon" aria-hidden="true">🌦</span>
+                        <span class="forecast__temperature">18°</span>
+                    </li>
+                    <li class="forecast__day">
+                        <span class="forecast__name">Пт</span>
+                        <span class="forecast__icon" aria-hidden="true">☀</span>
+                        <span class="forecast__temperature">21°</span>
+                    </li>
+                </ul>
+            </section>
+
+            <p class="scene-hint">Наведіть на картку, щоб побачити деталі</p>
+        </section>
+
+        <footer class="page-footer">
+            Дані прогнозу оновлено сьогодні о 08:00
+        </footer>
+    </main>
+</body>
+</html>
