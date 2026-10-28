@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task4</title>
+    <title>Завдання 4 — Навігаційні панелі</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,79 +11,111 @@
     <nav class="top-menu" aria-label="Горизонтальна навігація">
         <ul>
             <li class="active">
-                <a href="#home" aria-label="Головна"><span class="material-symbols-outlined">home</span></a>
+                <a href="#home" aria-label="Головна" aria-current="page">
+                    <span class="material-symbols-outlined" aria-hidden="true">home</span>
+                </a>
                 <ul>
-                    <li><a href="#home">Головна 1</a></li>
+                    <li><a href="#home">Головна</a></li>
                     <li>
-                        <a href="#about">Головна 2</a>
+                        <a href="#about">Про мене</a>
                         <ul>
-                            <li><a href="#about">Рівень 3</a></li>
-                            <li><a href="#work">Рівень 3</a></li>
+                            <li><a href="#about">Біографія</a></li>
+                            <li><a href="#interests">Інтереси</a></li>
                         </ul>
                     </li>
                 </ul>
             </li>
             <li>
-                <a href="#about" aria-label="Про нас"><span class="material-symbols-outlined">search</span></a>
+                <a href="#about" aria-label="Про мене">
+                    <span class="material-symbols-outlined" aria-hidden="true">person</span>
+                </a>
                 <ul>
-                    <li><a href="#about">Про нас</a></li>
-                    <li><a href="#work">Робота</a></li>
+                    <li><a href="#about">Біографія</a></li>
+                    <li><a href="#interests">Інтереси</a></li>
                 </ul>
             </li>
             <li class="right">
-                <a href="#work" aria-label="Контакти"><span class="material-symbols-outlined">mail</span></a>
+                <a href="#contact" aria-label="Контакти">
+                    <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+                </a>
                 <ul>
-                    <li><a href="#work">Контакти</a></li>
+                    <li><a href="#contact">Написати мені</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
+
     <aside class="side-menu">
         <nav aria-label="Вертикальна навігація">
             <ul>
                 <li class="active">
-                    <a href="#home"><span class="material-symbols-outlined">home</span>Home</a>
+                    <a href="#home" aria-current="page">
+                        <span class="material-symbols-outlined" aria-hidden="true">home</span>
+                        <span>Головна</span>
+                    </a>
                     <ul>
                         <li>
-                            <a href="#about">About</a>
+                            <a href="#about">Про мене</a>
                             <ul>
-                                <li><a href="#about">Розділ 1</a></li>
-                                <li><a href="#work">Розділ 2</a></li>
+                                <li><a href="#about">Біографія</a></li>
+                                <li><a href="#interests">Інтереси</a></li>
                             </ul>
                         </li>
-                        <li><a href="#work">Work</a></li>
+                        <li><a href="#interests">Захоплення</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#about"><span class="material-symbols-outlined">info</span>About</a>
+                    <a href="#about">
+                        <span class="material-symbols-outlined" aria-hidden="true">person</span>
+                        <span>Про мене</span>
+                    </a>
                     <ul>
-                        <li><a href="#about">Інформація</a></li>
-                        <li><a href="#work">Команда</a></li>
+                        <li><a href="#about">Біографія</a></li>
+                        <li><a href="#interests">Інтереси</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#work"><span class="material-symbols-outlined">work</span>Work With Me</a>
+                    <a href="#contact">
+                        <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+                        <span>Контакти</span>
+                    </a>
                     <ul>
-                        <li><a href="#work">Проєкти</a></li>
+                        <li><a href="#contact">Написати мені</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
     </aside>
-    <main class="content" id="home">
-        <h1>Навігаційні панелі</h1>
+
+    <main class="content">
+        <header class="page-header" id="home">
+            <p class="eyebrow">Моє портфоліо</p>
+            <h1>Навігаційні панелі</h1>
+            <p>Приклад сторінки з горизонтальним і вертикальним меню.</p>
+        </header>
+
         <nav class="sticky-menu" aria-label="Навігація сторінкою">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
+                <li><a href="#home">Головна</a></li>
+                <li><a href="#about">Про мене</a></li>
+                <li><a href="#interests">Інтереси</a></li>
+                <li><a href="#contact">Контакти</a></li>
             </ul>
         </nav>
-        <section id="about">
-            <h2>About</h2>
+
+        <section class="content-section" id="about">
+            <h2>Про мене</h2>
+            <p>Я вивчаю вебтехнології та створюю зручні й доступні вебсторінки.</p>
         </section>
-        <section id="work">
-            <h2>Work With Me</h2>
+
+        <section class="content-section" id="interests">
+            <h2>Інтереси</h2>
+            <p>Мене цікавлять HTML, CSS, дизайн інтерфейсів і сучасні вебстандарти.</p>
+        </section>
+
+        <section class="content-section" id="contact">
+            <h2>Контакти</h2>
+            <p>Буду радий обговорити навчальні проєкти та ідеї.</p>
         </section>
     </main>
 </body>
